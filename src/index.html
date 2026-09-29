@@ -1,146 +1,128 @@
-:root {
-  --text: #1a1a1a;
-  --muted: #5c574e;
-  --rule: #e3d8c4;
-  --accent: #1f2a37;
-  --page-bg: #f1f0ee;
-  --panel: #f7f1e3;
-  --panel-border: #e3d8c4;
-}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Erick Serrano Vargas | Curriculum Vitae</title>
+    <meta
+      name="description"
+      content="Curriculum Vitae Erick Serrano Vargas"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main class="cv">
+      <header class="cv-header">
+        <h1>Erick Serrano Vargas</h1>
+        <ul class="cv-contact">
+          <li>Cartago, Costa Rica 30101</li>
+          <li>
+            <a href="tel:+50686559258">+506 8655 9258</a>
+          </li>
+          <li>
+            <a href="mailto:erickserranov19@gmail.com">erickserranov19@gmail.com</a>
+          </li>
+        </ul>
+      </header>
 
-* {
-  box-sizing: border-box;
-}
+      <section class="cv-section">
+        <h2>Formación</h2>
+        <ul class="entries">
+          <li class="entry">
+            <div class="entry-head">
+              <h3>Cursando grado universitario</h3>
+              <p class="entry-period">Actual</p>
+            </div>
+            <p class="entry-org">Universidad de Costa Rica</p>
+            <p class="entry-detail">Carrera: Informática Empresarial</p>
+          </li>
+          <li class="entry">
+            <div class="entry-head">
+              <h3>Bachillerato en educación media</h3>
+              <p class="entry-period">2024</p>
+            </div>
+            <p class="entry-org">Colegio Técnico Profesional de Pacayas</p>
+            <p class="entry-detail">Especialidad: Agroindustria Alimentaria</p>
+          </li>
+        </ul>
+      </section>
 
-body {
-  margin: 0;
-  padding: 3rem 1.25rem;
-  background: var(--page-bg);
-  color: var(--text);
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-}
+      <section class="cv-section">
+        <h2>Aptitudes y habilidades</h2>
+        <ul class="skills">
+          <li class="skill">
+            <h3>Trabajo bajo presión</h3>
+            <p>
+              Gracias a la experiencia recibida, he aprendido a resolver problemas y realizar
+              tareas bajo presión sin caer en la desesperación, el estrés, el mal humor u otra
+              actitud no deseada dentro del campo laboral.
+            </p>
+          </li>
+          <li class="skill">
+            <h3>Atención al cliente</h3>
+            <p>
+              Debido a la experiencia recibida, he aprendido a tratar a las personas con el
+              trato correspondiente, atendiendo sus inquietudes o exigencias con éxito.
+            </p>
+          </li>
+          <li class="skill">
+            <h3>Comunicación</h3>
+            <p>Lenguaje claro, conciso y directo.</p>
+          </li>
+          <li class="skill">
+            <h3>Liderazgo</h3>
+            <p>Buena actitud para liderar frente a problemas en un equipo.</p>
+          </li>
+        </ul>
+      </section>
 
-.cv {
-  max-width: 46rem;
-  margin: 0 auto;
-  padding: 2.5rem 2.75rem;
-  background: var(--panel);
-  border: 1px solid var(--panel-border);
-  border-radius: 10px;
-  box-shadow: 0 1px 2px rgba(31, 42, 55, 0.04), 0 10px 24px rgba(31, 42, 55, 0.05);
-}
-
-.cv-header {
-  padding-bottom: 1.5rem;
-  border-bottom: 2px solid var(--accent);
-}
-
-.cv-header h1 {
-  margin: 0;
-  font-size: 1.9rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-}
-
-.cv-contact {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem 1.25rem;
-  margin: 0.9rem 0 0;
-  padding: 0;
-  list-style: none;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-.cv-contact a {
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 1px solid var(--rule);
-}
-
-.cv-contact a:hover {
-  color: var(--text);
-  border-bottom-color: var(--text);
-}
-
-.cv-section {
-  margin-top: 2.25rem;
-}
-
-.cv-section > h2 {
-  margin: 0 0 1.1rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 1px solid var(--rule);
-  color: var(--accent);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.entries,
-.skills {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.entry + .entry,
-.skill + .skill {
-  margin-top: 1.4rem;
-}
-
-.entry-head {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.entry-head h3,
-.skill h3 {
-  margin: 0;
-  font-size: 1.02rem;
-  font-weight: 600;
-}
-
-.entry-period {
-  margin: 0;
-  flex-shrink: 0;
-  color: var(--muted);
-  font-size: 0.85rem;
-  font-variant-numeric: tabular-nums;
-}
-
-.entry-org {
-  margin: 0.1rem 0 0;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-.entry-detail,
-.skill p {
-  margin: 0.35rem 0 0;
-}
-
-@media (max-width: 32rem) {
-  body {
-    padding: 1.5rem 1rem;
-  }
-
-  .cv {
-    padding: 1.5rem 1.25rem;
-  }
-
-  .cv-header h1 {
-    font-size: 1.6rem;
-  }
-
-  .entry-head {
-    flex-direction: column;
-    gap: 0.1rem;
-  }
-}
+      <section class="cv-section">
+        <h2>Experiencia</h2>
+        <ul class="entries">
+          <li class="entry">
+            <div class="entry-head">
+              <h3>Técnico y Supervisor de Calidad</h3>
+              <p class="entry-period">2024 &ndash; 2024</p>
+            </div>
+            <p class="entry-org">Master Cook</p>
+            <p class="entry-detail">
+              Supervisar y controlar las BPM y el HACCP de la empresa, su buena implementación
+              y control.
+            </p>
+          </li>
+          <li class="entry">
+            <div class="entry-head">
+              <h3>Mesero</h3>
+              <p class="entry-period">2023 &ndash; 2024</p>
+            </div>
+            <p class="entry-org">Restaurante Trotamundo</p>
+            <p class="entry-detail">
+              Encargado de atender a los clientes, realización de comandas y atención al cliente.
+            </p>
+          </li>
+          <li class="entry">
+            <div class="entry-head">
+              <h3>Ayudante de producción</h3>
+              <p class="entry-period">2023</p>
+            </div>
+            <p class="entry-org">IQS (Insumos y Químicos de Costa Rica)</p>
+            <p class="entry-detail">
+              Trabajo en el área de empacado y pesaje con aditivos alimenticios.
+            </p>
+          </li>
+          <li class="entry">
+            <div class="entry-head">
+              <h3>Barman</h3>
+              <p class="entry-period">2021 &ndash; 2023</p>
+            </div>
+            <p class="entry-org">Restaurante El Sapito</p>
+            <p class="entry-detail">
+              Encargado del área de bebidas y cócteles, realizando tareas básicas y complejas de
+              dicha área.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
